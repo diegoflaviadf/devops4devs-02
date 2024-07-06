@@ -15,6 +15,7 @@ jobs:
         run: echo "Publicar a imagem no Docker Hub"
   CD:
     runs-on: ubunto-latest
+    needs: [CI]
     steps:
       - name: Passo 01
         run: echo "Deploy da aplicação"
