@@ -48,7 +48,7 @@ jobs:
 
       -
         name: Kubeconfig
-        run: aws eks update-kubeconfig --name EKSAula && export AWS_ACCESS_KEY_ID="${{ secrets.V_AWS_ACCESS_KEY_ID }}" && export AWS_SECRET_ACCESS_KEY="${{ secrets.AWS_SECRET_ACCESS_KEY }}" && export AWS_SESSION_TOKEN="${{ secrets.AWS_SESSION_TOKEN }}
+        run: aws eks update-kubeconfig --name EKSAula && export AWS_ACCESS_KEY_ID="${{ secrets.V_AWS_ACCESS_KEY_ID }}" && export AWS_SECRET_ACCESS_KEY="${{ secrets.V_AWS_SECRET_ACCESS_KEY }}" && export AWS_SESSION_TOKEN="${{ secrets.V_AWS_SESSION_TOKEN }}
       - 
         name: Deploy
         uses: Azure/k8s-deploy@v4.10.0
